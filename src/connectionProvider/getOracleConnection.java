@@ -8,9 +8,9 @@ public class getOracleConnection {
     private static final String userName= "system";
     private static final String password= "nitish";
 
-    Connection connection= null;
+    static Connection connection= null;
 
-    public Connection getConnection(){
+    public static Connection getConnection(){
         try{
             if(connection==null){
                 connection= DriverManager.getConnection(url, userName, password);
