@@ -18,7 +18,7 @@ public class Retrieve {
 
             while (resultSet.next()){
                 System.out.println("v_name: "+resultSet.getString("v_name"));
-                System.out.println("v_leader: "+resultSet.getString("v_leader"));
+                System.out.println("v_leader: "+resultSet.getString("v_leader")+"\n");
             }
 
         }catch(SQLException e){

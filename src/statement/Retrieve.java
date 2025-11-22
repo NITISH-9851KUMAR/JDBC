@@ -12,8 +12,8 @@ public class Retrieve {
             String sql= "SELECT * FROM village";
             ResultSet resultSet= statement.executeQuery(sql);
             while (resultSet.next()){
-                System.out.println("v_name: "+resultSet.getString("v_name"));
-                System.out.println("v_leader: "+resultSet.getString("v_leader"));
+                System.out.println("Village Name: "+resultSet.getString("v_name"));
+                System.out.println("Village Leader: "+resultSet.getString("v_leader")+"\n");
             }
 
         }catch(SQLException e){
